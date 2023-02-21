@@ -1,11 +1,24 @@
 /*
- * @Author - Sasikala Ambalavanar
- * Description - QDMS Login Test 
- * Date - 20-02-2023
- * Purpose - Login Test
- * 
- */
 
+***********************************************************************************
+* Description
+*------------
+
+* QDMS Login functionalitiy
+***********************************************************************************
+
+* Author           : @Sasikala Ambalavanar
+* Date Written     : 17/02/2023
+ 
+
+
+* Test Case 		      Date         Intis        Comments
+* ================       ====         =====        ========
+*  Login function       20/02/2023   Sasikala     Orginal Version
+
+************************************************************************************
+
+*/
 
 package TestPack;
 
@@ -28,7 +41,8 @@ public class LoginTest extends QDMSDriver{
 
 	@Test
 	public void Login() throws InterruptedException, IOException {
-
+		
+// Login data get from the excel
 		PageFactory.initElements(driver, loginpg);
 
 		SoftAssert sa = new SoftAssert();

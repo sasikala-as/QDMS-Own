@@ -1,3 +1,29 @@
+/*
+
+***********************************************************************************
+* Description
+*------------
+
+* Add Sbu functionaltiy
+***********************************************************************************
+
+* Author           : @Sasikala Ambalavanar
+* Date Written     : 17/02/2023
+ 
+
+
+* Test Case Number       Date         Intis        Comments
+* ================       ====         =====        ========
+*   0001                20/02/2023   Sasikala     Orginal Version
+
+************************************************************************************
+
+*/
+
+
+
+
+
 package TestPack;
 
 import java.io.FileInputStream;
@@ -39,7 +65,7 @@ public class AddSbuInitialTest extends QDMSDriver {
 		try {
 			if (AddSbuUIPage.SBUbutton.isDisplayed()) {
 
-//						button Displayed
+//Check the SBU button Displayed
 
 				boolean ActualbiuttonDisplay = AddSbuUIPage.SBUbutton.isDisplayed();
 				boolean ExpectedbuttonDisplay = true;
@@ -58,7 +84,7 @@ public class AddSbuInitialTest extends QDMSDriver {
 				try {
 					if (AddSbuUIPage.SBUbutton.isEnabled()) {
 
-//								button enabled
+// Check the SBU Button enabled
 
 						boolean ActualImageDisplay = AddSbuUIPage.SBUbutton.isDisplayed();
 						boolean ExpectedImageDisplay = true;
@@ -74,7 +100,7 @@ public class AddSbuInitialTest extends QDMSDriver {
 							testCase.log(Status.FAIL, " Image Displayed is Wrong");
 						}
 
-						// Check position
+// Check SBU Button position
 
 						Point ActualLocation = AddSbuUIPage.SBUbutton.getLocation();
 
@@ -108,7 +134,7 @@ public class AddSbuInitialTest extends QDMSDriver {
 						}
 						Thread.sleep(2000);
 
-						// check font size
+// check  SBU Button font size
 
 						String ActualfontsSize = AddSbuUIPage.SBUbutton.getCssValue("font-size");
 						System.out.println("Font Size: " + ActualfontsSize);
@@ -135,7 +161,7 @@ public class AddSbuInitialTest extends QDMSDriver {
 						}
 						Thread.sleep(2000);
 
-						// Check the size
+// Check the SBU Button size
 
 						Dimension ActualSize = AddSbuUIPage.SBUbutton.getSize();
 						System.out.println("Size :" + ActualSize);
@@ -161,7 +187,7 @@ public class AddSbuInitialTest extends QDMSDriver {
 						}
 						Thread.sleep(2000);
 
-						// Check test button color
+// Check SBU Button button color
 
 						String ActualColour = AddSbuUIPage.SBUbutton.getCssValue("background-color");
 						System.out.println("rgb :" + ActualColour);
@@ -190,7 +216,7 @@ public class AddSbuInitialTest extends QDMSDriver {
 						}
 						Thread.sleep(2000);
 
-						// Check border colour
+// Check SBU Button border colour
 
 						String ActualBorderColour = AddSbuUIPage.SBUbutton.getCssValue("border-color");
 						System.out.println("rgb :" + ActualBorderColour);
@@ -219,7 +245,7 @@ public class AddSbuInitialTest extends QDMSDriver {
 						}
 						Thread.sleep(2000);
 
-						// check the font colour
+// check the SBU Button font colour
 
 						String ActualfontsColour = AddSbuUIPage.SBUbutton.getCssValue("color");
 						System.out.println("Font colour: " + ActualfontsColour);
@@ -246,7 +272,7 @@ public class AddSbuInitialTest extends QDMSDriver {
 						}
 						Thread.sleep(2000);
 
-						// check the font type
+// check the SBU Button font type
 
 						String ActualfontsType = AddSbuUIPage.SBUbutton.getCssValue("font-style");
 						System.out.println("Font type: " + ActualfontsType);
@@ -273,7 +299,7 @@ public class AddSbuInitialTest extends QDMSDriver {
 						}
 						Thread.sleep(2000);
 
-						// check text
+// check SBU Button text
 
 						String ActualText = AddSbuUIPage.SBUbutton.getText();
 						System.out.println("Text : " + ActualText);
@@ -300,7 +326,7 @@ public class AddSbuInitialTest extends QDMSDriver {
 						}
 						Thread.sleep(2000);
 
-						// check cursor
+// check SBU Button cursor
 
 						String ActualActions = AddSbuUIPage.SBUbutton.getCssValue("cursor");
 						System.out.println("cursor :" + ActualActions);
@@ -325,7 +351,7 @@ public class AddSbuInitialTest extends QDMSDriver {
 						}
 						Thread.sleep(2000);
 
-						// check button shape
+// check SBU button shape
 
 						String ActualShape = AddSbuUIPage.SBUbutton.getCssValue("border-radius");
 						System.out.println("shape :" + ActualShape);
@@ -350,7 +376,7 @@ public class AddSbuInitialTest extends QDMSDriver {
 						}
 						Thread.sleep(2000);
 
-						// check box shadow
+// check SBU Button box shadow
 
 						String ActualShadow = AddSbuUIPage.SBUbutton.getCssValue("box-shadow");
 						System.out.println("shadow :" + ActualShadow);
@@ -375,7 +401,7 @@ public class AddSbuInitialTest extends QDMSDriver {
 						}
 						Thread.sleep(2000);
    
-						// check padding
+// check SBU Button padding
 
 						String ActualPadding = AddSbuUIPage.SBUbutton.getCssValue("padding");
 						System.out.println("padding :" + ActualPadding);
@@ -441,7 +467,7 @@ public class AddSbuInitialTest extends QDMSDriver {
 
 		Thread.sleep(2000);
 
-		// ***** element visible test
+// ***** Check SBU MODEL ( Pop up screen ) element visible test
 
 		boolean AcctualVisible = AddSbuUIPage.addSbuModal.isDisplayed();
 		boolean ExpectedVisible = true;
@@ -466,7 +492,7 @@ public class AddSbuInitialTest extends QDMSDriver {
 		}
 		Thread.sleep(2000);
 
-		// ***** element position test
+// ***** Check SBU MODEL (Pop-up screen) element position test
 
 		Point ActualLocation = AddSbuUIPage.addSbuModal.getLocation();
 
@@ -497,7 +523,7 @@ public class AddSbuInitialTest extends QDMSDriver {
 		}
 		Thread.sleep(2000);
 
-		// ***** element size
+// ***** Check SBU MODEL (Pop up screen) element size
 
 		Dimension ActualSize = AddSbuUIPage.addSbuModal.getSize();
 		System.out.println("Size : " + ActualSize);
@@ -522,7 +548,7 @@ public class AddSbuInitialTest extends QDMSDriver {
 		}
 		Thread.sleep(2000);
 
-		// ***** element background-color
+// *****Check SBU MODEL (Pop up screen) element background-color
 
 		String ActualButtonColor = AddSbuUIPage.addSbuModal.getCssValue("background-color");
 		System.out.println("rgb :" + ActualButtonColor);
@@ -547,7 +573,7 @@ public class AddSbuInitialTest extends QDMSDriver {
 		}
 		Thread.sleep(2000);
 
-		// ***** element border-color
+// ***** Check SBU MODEL (Pop up screen)element border-color
 
 		String ActualBorderColor = AddSbuUIPage.addSbuModal.getCssValue("border-colour");
 		System.out.println("rgb :" + ActualBorderColor);
@@ -573,7 +599,7 @@ public class AddSbuInitialTest extends QDMSDriver {
 		}
 		Thread.sleep(2000);
 
-		// ***** element overflow
+// ***** Check SBU MODEL (Pop up screen)element overflow
 
 		String ActualOverflow = AddSbuUIPage.addSbuModal.getCssValue("overflow");
 		System.out.println("overflow :" + ActualOverflow);
@@ -599,7 +625,7 @@ public class AddSbuInitialTest extends QDMSDriver {
 		}
 		Thread.sleep(2000);
 
-		// ***** element margin
+// *****Check SBU MODEL (Pop up screen) element margin
 
 		String ActualMargin = AddSbuUIPage.addSbuModal.getCssValue("margin");
 		System.out.println("margin :" + ActualMargin);
@@ -625,14 +651,14 @@ public class AddSbuInitialTest extends QDMSDriver {
 		}
 		Thread.sleep(2000);
 
-		// ***** element cursor
+// ***** Check SBU MODEL (Pop up screen)element cursor
 
 		String ActualActions = AddSbuUIPage.addSbuModal.getCssValue("cursor");
 		System.out.println("cursor :" + ActualActions);
 		String ExpectedActions = "auto";
 
 		boolean cursor = true;
-		testCase = extent.createTest("022-STEP-3 \"ADD SBU\" DIALOGBOX-CURSOR-TYPE");
+		testCase = extent.createTest("STEP-3 -022 \"ADD SBU\" DIALOGBOX-CURSOR-TYPE");
 		try {
 			AssertJUnit.assertEquals(ActualActions, ExpectedActions);
 
@@ -650,14 +676,14 @@ public class AddSbuInitialTest extends QDMSDriver {
 		}
 		Thread.sleep(2000);
 
-		// ***** element z- index
+// *****Check SBU MODEL (Pop-up screen) element z- index
 
 		String ActualZindex = AddSbuUIPage.addSbuModal.getCssValue("z-index");
 		System.out.println("z-index :" + ActualZindex);
 		String ExpectedZindex = "auto";
 
 		boolean z_index = true;
-		testCase = extent.createTest("023-STEP-3 \"ADD SBU\" DIALOGBOX-Z-INDEX-TYPE");
+		testCase = extent.createTest("STEP-3 -023 \"ADD SBU\" DIALOGBOX-Z-INDEX-TYPE");
 		try {
 			AssertJUnit.assertEquals(ActualZindex, ExpectedZindex);
 
@@ -677,7 +703,7 @@ public class AddSbuInitialTest extends QDMSDriver {
 
 		// ***** click-on element
 
-		// identify modal header
+	// Check SBU MODEL (Pop-up screen) identify modal header
 
 		String modalActual = AddSbuUIPage.addSbuModalHeader.getText();
 		System.out.println("Modal Dialog header: " + modalActual);
@@ -685,7 +711,7 @@ public class AddSbuInitialTest extends QDMSDriver {
 		String modalExpected = "Add SBU";
 
 		boolean modalHeader = true;
-		testCase = extent.createTest("024-STEP-3 \"ADD SBU\" DIALOGBOX-HEADER");
+		testCase = extent.createTest("STEP-3-024 \"ADD SBU\" DIALOGBOX-HEADER");
 		try {
 			AssertJUnit.assertEquals(modalActual, modalExpected);
 
@@ -703,14 +729,14 @@ public class AddSbuInitialTest extends QDMSDriver {
 		}
 		Thread.sleep(2000);
 
-		// identify modal content
+//Check SBU MODEL (Pop-up screen) identify modal content
 
 		String ActualmodalContent = AddSbuUIPage.addSbuModal.getText();
 		System.out.println(ActualmodalContent);
 		String ExpectedModalContent = "Add SBU" + "\n" + "Sub Business Unit:"+ "\n" + "Description:"+ "\n" + "CancelSave";
 
 		boolean modalContent = true;
-		testCase = extent.createTest("025-STEP-3 \"ADD SBU\" DIALOGBOX-CONTENT");
+		testCase = extent.createTest("STEP-3-025 \"ADD SBU\" DIALOGBOX-CONTENT");
 		try {
 			AssertJUnit.assertEquals(ActualmodalContent, ExpectedModalContent);
 
@@ -730,7 +756,7 @@ public class AddSbuInitialTest extends QDMSDriver {
 
 		
 
-		// click on inside of modal
+//  click on inside of SBU MODEL (Pop-up screen)
 
 		AddSbuUIPage.addSbuModal.click();
 		Thread.sleep(2000);
@@ -739,7 +765,7 @@ public class AddSbuInitialTest extends QDMSDriver {
 		boolean ExpectedAfterClickinside = true;
 
 		boolean elementvisibleafterclickinside = true;
-		testCase = extent.createTest("026-STEP-3  \"ADD SBU\" DIALOGBOX -INVISIBLE-ONCLICK-INSIDE");
+		testCase = extent.createTest("STEP-3-026  \"ADD SBU\" DIALOGBOX -INVISIBLE-ONCLICK-INSIDE");
 		try {
 			AssertJUnit.assertEquals(AcctualAfterClickinside, ExpectedAfterClickinside);
 		} catch (AssertionError e) {
@@ -812,11 +838,11 @@ public class AddSbuInitialTest extends QDMSDriver {
 		try {
 			if (AddSbuFunctionalPage.SBUsavebutton.isDisplayed()) {
 
-//						button Displayed
+// Check SBU Save button Displayed
 
 				boolean ActualbiuttonDisplay = AddSbuFunctionalPage.SBUsavebutton.isDisplayed();
 				boolean ExpectedbuttonDisplay = true;
-				testCase = extent.createTest("027-STEP-5 CHECK \"SAVE BUTTON\" -DISPLAYED");
+				testCase = extent.createTest("STEP-5-027 CHECK \"SAVE BUTTON\" -DISPLAYED");
 				try {
 					Assert.assertEquals(ActualbiuttonDisplay, ExpectedbuttonDisplay);
 					testCase.log(Status.INFO, "Actual Image Displayed :- " + ActualbiuttonDisplay);
@@ -831,11 +857,11 @@ public class AddSbuInitialTest extends QDMSDriver {
 				try {
 					if (AddSbuFunctionalPage.SBUsavebutton.isEnabled()) {
 
-//								button enabled
+//	Check SBU Save button enabled
 
 						boolean ActualImageDisplay = AddSbuFunctionalPage.SBUsavebutton.isDisplayed();
 						boolean ExpectedImageDisplay = true;
-						testCase = extent.createTest("028-STEP-5 CHECK \"SAVE BUTTON\" -ENABLED");
+						testCase = extent.createTest("STEP-5-028 CHECK \"SAVE BUTTON\" -ENABLED");
 						try {
 							Assert.assertEquals(ActualImageDisplay, ExpectedImageDisplay);
 							testCase.log(Status.INFO, "Actual Image Displayed :- " + ActualImageDisplay);
@@ -847,7 +873,7 @@ public class AddSbuInitialTest extends QDMSDriver {
 							testCase.log(Status.FAIL, " Image Displayed is Wrong");
 						}
 
-						// Check position
+// Check SBU Save button position
 
 						Point ActualLocation = AddSbuFunctionalPage.SBUsavebutton.getLocation();
 
@@ -862,7 +888,7 @@ public class AddSbuInitialTest extends QDMSDriver {
 						Point ExpectedLocation = new Point(907, 288);
 
 						boolean position = true;
-						testCase = extent.createTest("029-STEP-5 CHECK \"SAVE BUTTON\" -POSITION");
+						testCase = extent.createTest("STEP-5-029 CHECK \"SAVE BUTTON\" -POSITION");
 						try {
 							AssertJUnit.assertEquals(ActualLocation, ExpectedLocation);
 						} catch (AssertionError e) {
@@ -881,7 +907,7 @@ public class AddSbuInitialTest extends QDMSDriver {
 						}
 						Thread.sleep(2000);
 
-						// check font size
+// Check SBU Save button font size
 
 						String ActualfontsSize = AddSbuFunctionalPage.SBUsavebutton.getCssValue("font-size");
 						System.out.println("Font Size: " + ActualfontsSize);
@@ -889,7 +915,7 @@ public class AddSbuInitialTest extends QDMSDriver {
 						String ExpectedfontsSize = "14px";
 
 						boolean fontsize = true;
-						testCase = extent.createTest("030-STEP-5 CHECK \"SAVE BUTTON\" -FONT-SIZE");
+						testCase = extent.createTest("STEP-5-030 CHECK \"SAVE BUTTON\" -FONT-SIZE");
 						try {
 							AssertJUnit.assertEquals(ActualfontsSize, ExpectedfontsSize);
 						} catch (AssertionError e) {
@@ -908,14 +934,14 @@ public class AddSbuInitialTest extends QDMSDriver {
 						}
 						Thread.sleep(2000);
 
-						// Check the size
+// Check SBU Save button size
 
 						Dimension ActualSize = AddSbuFunctionalPage.SBUsavebutton.getSize();
 						System.out.println("Size :" + ActualSize);
 						Dimension ExpectedSize = new Dimension(60, 32);
 
 						boolean size = true;
-						testCase = extent.createTest("031-STEP-5 CHECK \"SAVE BUTTON\" -SIZE");
+						testCase = extent.createTest("STEP-5-031 CHECK \"SAVE BUTTON\" -SIZE");
 						try {
 							AssertJUnit.assertEquals(ActualSize, ExpectedSize);
 						} catch (AssertionError e) {
@@ -934,7 +960,7 @@ public class AddSbuInitialTest extends QDMSDriver {
 						}
 						Thread.sleep(2000);
 
-						// Check test button color
+// Check SBU Save button color
 
 						String ActualColour = AddSbuFunctionalPage.SBUsavebutton.getCssValue("background-color");
 						System.out.println("rgb :" + ActualColour);
@@ -944,7 +970,7 @@ public class AddSbuInitialTest extends QDMSDriver {
 
 						boolean colour = true;
 
-						testCase = extent.createTest("032-STEP-5 CHECK \"SAVE BUTTON\" -COLOUR");
+						testCase = extent.createTest("STEP-5-032 CHECK \"SAVE BUTTON\" -COLOUR");
 						try {
 							AssertJUnit.assertEquals(ActualColour, ExpectedColour);
 						} catch (AssertionError e) {
@@ -963,7 +989,7 @@ public class AddSbuInitialTest extends QDMSDriver {
 						}
 						Thread.sleep(2000);
 
-						// Check border colour
+// Check SBU Save button border colour
 
 						String ActualBorderColour = AddSbuFunctionalPage.SBUsavebutton.getCssValue("border-color");
 						System.out.println("rgb :" + ActualBorderColour);
@@ -973,7 +999,7 @@ public class AddSbuInitialTest extends QDMSDriver {
 
 						boolean BorderColour = true;
 
-						testCase = extent.createTest("033-STEP-5 CHECK \"SAVE BUTTON\" -BORDER-COLOUR");
+						testCase = extent.createTest("STEP-5-033 CHECK \"SAVE BUTTON\" -BORDER-COLOUR");
 						try {
 							AssertJUnit.assertEquals(ActualBorderColour, ExpectedBorderColour);
 						} catch (AssertionError e) {
@@ -992,7 +1018,7 @@ public class AddSbuInitialTest extends QDMSDriver {
 						}
 						Thread.sleep(2000);
 
-						// check the font colour
+// Check SBU Save button font colour
 
 						String ActualfontsColour = AddSbuFunctionalPage.SBUsavebutton.getCssValue("color");
 						System.out.println("Font colour: " + ActualfontsColour);
@@ -1000,7 +1026,7 @@ public class AddSbuInitialTest extends QDMSDriver {
 						String ExpectedfontsColour = "rgba(255, 255, 255, 1)";
 
 						boolean fontcolour = true;
-						testCase = extent.createTest("034-STEP-5 CHECK \"SAVE BUTTON\" -FONT-COLOUR");
+						testCase = extent.createTest("STEP-5-034 CHECK \"SAVE BUTTON\" -FONT-COLOUR");
 						try {
 							AssertJUnit.assertEquals(ActualfontsColour, ExpectedfontsColour);
 						} catch (AssertionError e) {
@@ -1019,7 +1045,7 @@ public class AddSbuInitialTest extends QDMSDriver {
 						}
 						Thread.sleep(2000);
 
-						// check the font type
+// Check SBU Save button font type
 
 						String ActualfontsType = AddSbuFunctionalPage.SBUsavebutton.getCssValue("font-style");
 						System.out.println("Font type: " + ActualfontsType);
@@ -1027,7 +1053,7 @@ public class AddSbuInitialTest extends QDMSDriver {
 						String ExpectedfontsType = "normal";
 
 						boolean fonttype = true;
-						testCase = extent.createTest("035-STEP-5 CHECK \"SAVE BUTTON\" -FONT-TYPE");
+						testCase = extent.createTest("STEP-5-035 CHECK \"SAVE BUTTON\" -FONT-TYPE");
 						try {
 							AssertJUnit.assertEquals(ActualfontsType, ExpectedfontsType);
 						} catch (AssertionError e) {
@@ -1046,7 +1072,7 @@ public class AddSbuInitialTest extends QDMSDriver {
 						}
 						Thread.sleep(2000);
 
-						// check text
+// Check SBU Save button text
 
 						String ActualText = AddSbuFunctionalPage.SBUsavebutton.getText();
 						System.out.println("Text : " + ActualText);
@@ -1054,7 +1080,7 @@ public class AddSbuInitialTest extends QDMSDriver {
 						String ExpectedText = "Save";
 
 						boolean test = true;
-						testCase = extent.createTest("036-STEP-5 CHECK \"SAVE BUTTON\" -TEXT");
+						testCase = extent.createTest("STEP-5-036 CHECK \"SAVE BUTTON\" -TEXT");
 						try {
 							AssertJUnit.assertEquals(ActualText, ExpectedText);
 						} catch (AssertionError e) {
@@ -1073,14 +1099,14 @@ public class AddSbuInitialTest extends QDMSDriver {
 						}
 						Thread.sleep(2000);
 
-						// check cursor
+// Check SBU Save button cursor
 
 						String ActualActions = AddSbuFunctionalPage.SBUsavebutton.getCssValue("cursor");
 						System.out.println("cursor :" + ActualActions);
 						String ExpectedActions = "pointer";
 
 						boolean cursor = true;
-						testCase = extent.createTest("037-STEP-5 CHECK \"SAVE BUTTON\" -CURSOR-TYPE");
+						testCase = extent.createTest("STEP-5-037 CHECK \"SAVE BUTTON\" -CURSOR-TYPE");
 						try {
 							AssertJUnit.assertEquals(ActualActions, ExpectedActions);
 
@@ -1098,14 +1124,14 @@ public class AddSbuInitialTest extends QDMSDriver {
 						}
 						Thread.sleep(2000);
 
-						// check button shape
+// Check SBU Save button shape
 
 						String ActualShape = AddSbuFunctionalPage.SBUsavebutton.getCssValue("border-radius");
 						System.out.println("shape :" + ActualShape);
 						String ExpectedShape = "2px";
 
 						boolean shape = true;
-						testCase = extent.createTest("038-STEP-5 CHECK \"SAVE BUTTON\" -SHAPE");
+						testCase = extent.createTest("STEP-5-038 CHECK \"SAVE BUTTON\" -SHAPE");
 						try {
 							AssertJUnit.assertEquals(ActualShape, ExpectedShape);
 
@@ -1123,14 +1149,14 @@ public class AddSbuInitialTest extends QDMSDriver {
 						}
 						Thread.sleep(2000);
 
-						// check box shadow
+// Check SBU Save button box shadow
 
 						String ActualShadow = AddSbuFunctionalPage.SBUsavebutton.getCssValue("box-shadow");
 						System.out.println("shadow :" + ActualShadow);
 						String ExpectedShadow = "rgba(0, 0, 0, 0.016) 0px 2px 0px 0px";
 
 						boolean shadow = true;
-						testCase = extent.createTest("039-STEP-5 CHECK \"SAVE BUTTON\" -BOX-SHADOW");
+						testCase = extent.createTest("STEP-5-039 CHECK \"SAVE BUTTON\" -BOX-SHADOW");
 						try {
 							AssertJUnit.assertEquals(ActualShadow, ExpectedShadow);
 
@@ -1148,14 +1174,14 @@ public class AddSbuInitialTest extends QDMSDriver {
 						}
 						Thread.sleep(2000);
 
-						// check padding
+// Check SBU Save button padding
 
 						String ActualPadding = AddSbuFunctionalPage.SBUsavebutton.getCssValue("padding");
 						System.out.println("padding :" + ActualPadding);
 						String ExpectedPadding = "4px 15px";
 
 						boolean padding = true;
-						testCase = extent.createTest("040-STEP-5 CHECK \"SAVE BUTTON\" -PADDING");
+						testCase = extent.createTest("STEP-5-040 CHECK \"SAVE BUTTON\" -PADDING");
 						try {
 							AssertJUnit.assertEquals(ActualPadding, ExpectedPadding);
 
@@ -1198,7 +1224,7 @@ public class AddSbuInitialTest extends QDMSDriver {
 	}
 	
 	//STEP-7 CHECK THE ENTERED VALUE HAS SAVED IN FIRST OF THE TABLE
-//041-LAST-ADDED-DATA
+				//041-LAST-ADDED-DATA
 	public static  void checkLastAddvalue() throws InterruptedException, IOException {
 
 		PageFactory.initElements(driver, addfunctionpg);
@@ -1212,7 +1238,7 @@ public class AddSbuInitialTest extends QDMSDriver {
 		String expecteddata =sbu;
 
 		boolean firstdata = true;
-		testCase = extent.createTest("041-STEP-7 CHECK THE ENTERED VALUE HAS SAVED IN FIRST OF THE TABLE");
+		testCase = extent.createTest("STEP-7-041 CHECK THE ENTERED VALUE HAS SAVED IN FIRST OF THE TABLE");
 		try {
 			AssertJUnit.assertEquals(actualdata, expecteddata);
 

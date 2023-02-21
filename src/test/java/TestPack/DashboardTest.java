@@ -1,3 +1,26 @@
+/*
+
+***********************************************************************************
+* Description
+*------------
+
+* QDMS Master & SBU Button click 
+***********************************************************************************
+
+* Author           : @Sasikala Ambalavanar
+* Date Written     : 20/02/2023
+ 
+
+
+* Test Case 		     			 Date         Intis        Comments
+* ================      			 ====         =====        ========
+*  Master & SBU Button click        20/02/2023   Sasikala     Orginal Version
+
+************************************************************************************
+
+*/
+
+
 package TestPack;
 
 import java.io.IOException;
@@ -13,8 +36,10 @@ public class DashboardTest extends QDMSDriver{
 	@Test
 	
 	public void Dashboard () throws InterruptedException,IOException{
-			
-	PageFactory.initElements(driver, Dashboardpage);
+
+// 	Click Master Module & click Sub business Unit		
+
+		PageFactory.initElements(driver, Dashboardpage);
 	
 	Thread.sleep(2000);
 	Dashboardpage.Master.click();
