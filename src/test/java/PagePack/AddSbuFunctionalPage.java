@@ -50,7 +50,7 @@ public static WebElement AddSBU;
 @FindBy(xpath = "//*[@id=\"description\"]")
 public static WebElement SBUdestext;
 
-@FindBy(xpath ="//tr[2]/td[1]")
+@FindBy(xpath ="//span[text()='Save']")
 //"/html/body/div[3]/div/div[2]/div/div[2]/div[3]/div/button[2]")
 public static WebElement SBUsavebutton;
 

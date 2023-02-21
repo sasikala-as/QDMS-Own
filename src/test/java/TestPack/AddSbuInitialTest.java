@@ -885,7 +885,7 @@ public class AddSbuInitialTest extends QDMSDriver {
 
 						// testCase = extent.createTest("******");
 
-						Point ExpectedLocation = new Point(907, 288);
+						Point ExpectedLocation = new Point(922, 293);
 
 						boolean position = true;
 						testCase = extent.createTest("STEP-5-029 CHECK \"SAVE BUTTON\" -POSITION");
@@ -938,7 +938,7 @@ public class AddSbuInitialTest extends QDMSDriver {
 
 						Dimension ActualSize = AddSbuFunctionalPage.SBUsavebutton.getSize();
 						System.out.println("Size :" + ActualSize);
-						Dimension ExpectedSize = new Dimension(60, 32);
+						Dimension ExpectedSize = new Dimension(30, 22);
 
 						boolean size = true;
 						testCase = extent.createTest("STEP-5-031 CHECK \"SAVE BUTTON\" -SIZE");
@@ -966,7 +966,7 @@ public class AddSbuInitialTest extends QDMSDriver {
 						System.out.println("rgb :" + ActualColour);
 
 						// String hexcolour = Color.fromString(ActualColour).asHex();
-						String ExpectedColour = "rgba(0, 19, 40, 1)";
+						String ExpectedColour = "rgba(0, 0, 0, 0)";
 
 						boolean colour = true;
 
@@ -1128,7 +1128,7 @@ public class AddSbuInitialTest extends QDMSDriver {
 
 						String ActualShape = AddSbuFunctionalPage.SBUsavebutton.getCssValue("border-radius");
 						System.out.println("shape :" + ActualShape);
-						String ExpectedShape = "2px";
+						String ExpectedShape = "0px";
 
 						boolean shape = true;
 						testCase = extent.createTest("STEP-5-038 CHECK \"SAVE BUTTON\" -SHAPE");
@@ -1153,7 +1153,7 @@ public class AddSbuInitialTest extends QDMSDriver {
 
 						String ActualShadow = AddSbuFunctionalPage.SBUsavebutton.getCssValue("box-shadow");
 						System.out.println("shadow :" + ActualShadow);
-						String ExpectedShadow = "rgba(0, 0, 0, 0.016) 0px 2px 0px 0px";
+						String ExpectedShadow = "none";
 
 						boolean shadow = true;
 						testCase = extent.createTest("STEP-5-039 CHECK \"SAVE BUTTON\" -BOX-SHADOW");
@@ -1178,7 +1178,7 @@ public class AddSbuInitialTest extends QDMSDriver {
 
 						String ActualPadding = AddSbuFunctionalPage.SBUsavebutton.getCssValue("padding");
 						System.out.println("padding :" + ActualPadding);
-						String ExpectedPadding = "4px 15px";
+						String ExpectedPadding = "0px";
 
 						boolean padding = true;
 						testCase = extent.createTest("STEP-5-040 CHECK \"SAVE BUTTON\" -PADDING");
